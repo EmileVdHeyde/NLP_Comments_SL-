@@ -16,7 +16,7 @@ import tensorflow as tf
 import os
 import pickle
 
-os.chdir(r'C:\Users\EmileVDH\NLPAPP')
+##os.chdir(r'C:\Users\EmileVDH\NLPAPP')
 
 model = tf.keras.models.load_model('NLP_Comments_Classification_20200531.h5')
 with open('tokenizer_X_20200531.pickle', 'rb') as handle:
