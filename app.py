@@ -79,17 +79,17 @@ d=str(feedback)
 
 ##Only run to create the table 
 #conn = psycopg2.connect(database="FeedbackDB", user="postgres", password="Evangelos71", host = "127.0.0.1", port = "5432")
-conn =psycopg2.connect(database="dfhv0pv3b7q21r", user="yiktglljvlvmvz", password="f56a25f0b75da7ca19be7dd56e87587973c1176bded5e93e34c71b712d712478", host = "ec2-54-161-208-31.compute-1.amazonaws.com", port = "5432")
-cur = conn.cursor()
-cur.execute('''CREATE TABLE FEEDBACK3
-      (ID SERIAL PRIMARY KEY,
-      COMMENT           CHAR(1000)   NOT NULL,
-      PROB          text     NOT NULL,
-      PRED        text ,
-      FEEDBACK        text );''')
+#conn =psycopg2.connect(database="dfhv0pv3b7q21r", user="yiktglljvlvmvz", password="f56a25f0b75da7ca19be7dd56e87587973c1176bded5e93e34c71b712d712478", host = "ec2-54-161-208-31.compute-1.amazonaws.com", port = "5432")
+#cur = conn.cursor()
+#cur.execute('''CREATE TABLE FEEDBACK3
+ #     (ID SERIAL PRIMARY KEY,
+  #    COMMENT           CHAR(1000)   NOT NULL,
+   #   PROB          text     NOT NULL,
+    #  PRED        text ,
+     # FEEDBACK        text );''')
 
-conn.commit()
-conn.close()
+#conn.commit()
+#conn.close()
 
 
 #inserts the values into database 
